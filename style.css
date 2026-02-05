@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+/* Navbar */
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+.logo {
+  color: #e50914;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.sign-in {
+  background: #e50914;
+  border: none;
+  padding: 8px 16px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Hero */
+.hero {
+  height: 95vh;
+  background:
+    linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0.3)),
+    linear-gradient(to bottom, rgba(0,0,0,0.85), rgba(0,0,0,0.3)),
+    url("https://assets.nflxext.com/ffe/siteui/vlv3/0f4b5c6a-bd1a-4c61-8fd0-9b7a88b4f53f/IN-en-20240115-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 900px;
+  padding: 20px;
+}
+
+.hero-content h2 {
+  font-size: 56px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.small-text {
+  font-size: 18px;
+}
+
+/* Email */
+.email-box {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.email-box input {
+  padding: 18px;
+  width: 380px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+.email-box button {
+  padding: 18px 28px;
+  font-size: 18px;
+  font-weight: bold;
+  background: #e50914;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Features */
+.feature {
+  padding: 80px 12%;
+  border-top: 8px solid #222;
+}
+
+.feature.dark {
+  background-color: #111;
+}
+
+.feature-text h2 {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.feature-text p {
+  font-size: 22px;
+  color: #ddd;
+  max-width: 700px;
+}
+
+/* FAQ */
+.faq {
+  padding: 80px 12%;
+  border-top: 8px solid #222;
+}
+
+.faq h2 {
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 40px;
+}
+
+.faq-item {
+  max-width: 900px;
+  margin: 0 auto 10px;
+}
+
+.faq-question {
+  background: #303030;
+  padding: 25px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.faq-answer {
+  background: #303030;
+  padding: 25px;
+  font-size: 20px;
+  display: none;
+  color: #ddd;
+}
+
+/* Footer */
+.footer {
+  border-top: 8px solid #222;
+  padding: 30px;
+  text-align: center;
+  color: #aaa;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-content h2 {
+    font-size: 36px;
+  }
+
+  .email-box {
+    flex-direction: column;
+  }
+
+  .email-box input,
+  .email-box button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .feature-text h2 {
+    font-size: 32px;
+  }
+}
